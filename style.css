@@ -783,6 +783,17 @@ input, select, textarea {
   line-height: 1.7;
 }
 
+.moments__card-schedule {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--gold);
+}
+
 /* ==========================================================================
    13. Hero Dish
    ========================================================================== */
@@ -896,6 +907,27 @@ input, select, textarea {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  color: var(--text-dim);
+}
+
+.history__signature {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+.history__signature-name {
+  display: block;
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.history__signature-location {
+  font-family: var(--sans);
+  font-size: 13px;
   color: var(--text-dim);
 }
 
@@ -1160,6 +1192,21 @@ textarea.contact__input {
   text-decoration: underline;
 }
 
+.contact__info-link {
+  display: inline-block;
+  color: var(--gold);
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 8px;
+  transition: opacity 0.3s ease;
+}
+
+.contact__info-link:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
 .contact__info-divider {
   margin: 0 6px;
 }
@@ -1207,6 +1254,29 @@ textarea.contact__input {
   height: 200px;
   border: 0;
   filter: grayscale(0.6) contrast(1.1);
+}
+
+.footer__social {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.08);
+  color: var(--text);
+  transition: all 0.3s ease;
+}
+
+.footer__social-link:hover {
+  background-color: var(--gold);
+  color: var(--bg);
 }
 
 .footer__bottom {
