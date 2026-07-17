@@ -28,7 +28,7 @@
         <a href="#opiniones" class="header__nav-link">Opiniones</a>
         <a href="#contacto" class="header__nav-link">Contacto</a>
       </nav>
-      <a href="https://wa.me/5491135994950" class="header__cta btn btn--primary" target="_blank" rel="noopener">Reservar</a>
+      <a href="https://wa.me/5491135994950" class="header__cta" target="_blank" rel="noopener">Reservar</a>
       <button class="header__burger" id="hamburger" aria-label="Abrir menú">
         <span></span>
         <span></span>
@@ -36,7 +36,6 @@
       </button>
     </div>
 
-    <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileNav">
       <nav class="mobile-menu__nav">
         <a href="#experiencia" class="mobile-menu__link">Experiencia</a>
@@ -74,19 +73,18 @@
   <!-- EXPERIENCE -->
   <section class="experience section" id="experiencia">
     <div class="container">
-      <span class="section__label" data-animate="fade-up">Nuestra esencia</span>
-      <h2 class="section__title" data-animate="fade-up" data-delay="100">Más que un bar, una experiencia</h2>
+      <div class="section__header">
+        <span class="section__label" data-animate="fade-up">Nuestra esencia</span>
+        <h2 class="section__title" data-animate="fade-up" data-delay="100">Más que un bar, una experiencia</h2>
+      </div>
       <div class="experience__grid">
         <div class="experience__card" data-animate="fade-up" data-delay="100">
           <div class="experience__card-icon">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M8 44h32"/>
-              <path d="M10 44V20a2 2 0 0 1 2-2h24a2 2 0 0 1 2 2v24"/>
-              <path d="M18 18V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12"/>
-              <circle cx="24" cy="30" r="6"/>
-              <path d="M24 24v-2"/>
-              <path d="M28 28l2-2"/>
-              <path d="M20 28l-2-2"/>
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 22h8"/>
+              <path d="M12 11v11"/>
+              <path d="M20 2H4l3.5 9h13L20 2z"/>
+              <path d="M7.5 11c0-4.14 2.07-6 4.5-6s4.5 1.86 4.5 6"/>
             </svg>
           </div>
           <h3 class="experience__card-title">Coctelería de autor</h3>
@@ -94,14 +92,8 @@
         </div>
         <div class="experience__card" data-animate="fade-up" data-delay="200">
           <div class="experience__card-icon">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M6 34c0-8 6-14 14-14h8c8 0 14 6 14 14"/>
-              <path d="M12 20l4-8"/>
-              <path d="M36 20l-4-8"/>
-              <path d="M24 4v8"/>
-              <circle cx="24" cy="26" r="4"/>
-              <path d="M16 38l2-2"/>
-              <path d="M32 38l-2-2"/>
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/>
             </svg>
           </div>
           <h3 class="experience__card-title">Noches que no paran</h3>
@@ -109,11 +101,10 @@
         </div>
         <div class="experience__card" data-animate="fade-up" data-delay="300">
           <div class="experience__card-icon">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="6" y="22" width="36" height="18" rx="4"/>
-              <path d="M14 22V14a10 10 0 0 1 20 0v8"/>
-              <path d="M18 32h12"/>
-              <path d="M24 32v6"/>
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/>
+              <path d="M7 2v20"/>
+              <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/>
             </svg>
           </div>
           <h3 class="experience__card-title">Gastronomía para compartir</h3>
@@ -126,28 +117,30 @@
   <!-- GALLERY -->
   <section class="gallery section" id="galeria">
     <div class="container">
-      <span class="section__label" data-animate="fade-up">Ambientes</span>
-      <h2 class="section__title" data-animate="fade-up" data-delay="100">Cada rincón tiene su vibe</h2>
+      <div class="section__header">
+        <span class="section__label" data-animate="fade-up">Ambientes</span>
+        <h2 class="section__title" data-animate="fade-up" data-delay="100">Cada rincón tiene su vibe</h2>
+      </div>
       <div class="gallery__grid">
         <div class="gallery__item gallery__item--large" data-animate="fade-up" data-delay="100">
           <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnx-5bNBtB6VNxMiOfcg_L6miYDcm49x8hfl_Lpu_O4z4_aGWlHBxjb6E3YFVkvlLggshhxbW5hTCueI1oSy3nSQMUG9LXaR9Yd9Xm46O6LqFGBPxSQivlynxneVC_Q0iRPN5Cz=s1360-w1360-h1020-rw" alt="Interior mesas" loading="lazy">
-          <div class="gallery__item-overlay"><span>Interior</span></div>
+          <div class="gallery__item-overlay"><span class="gallery__item-label">Interior</span></div>
         </div>
         <div class="gallery__item" data-animate="fade-up" data-delay="150">
           <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm2orklDfz_cfhl5uUVJrjPo5qCE0TovygNKllyu9A9oVf35gIS_sJfNj4KzMBynh_XtaYXqDk81k63aJ3lvDTOmDInFCSkIujlSgHDKnpua8wkPohHApr4qjQiBMk8wjn-6xSjuA=s1360-w1360-h1020-rw" alt="Barra" loading="lazy">
-          <div class="gallery__item-overlay"><span>Barra</span></div>
+          <div class="gallery__item-overlay"><span class="gallery__item-label">Barra</span></div>
         </div>
         <div class="gallery__item" data-animate="fade-up" data-delay="200">
           <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkA2c_mQ96Dj9r4yOpRj9FAsLLwn49P29Y_Qc4xemlL0_mrY5aR9xkAbZ3ttn6PI3lZFUPtNFYLRhr1sZ1nK5LCSbTRMv9xp3wPN7vM1S_KIaa6VYMf104lyaYpwPTdlRSir2e2zHtrJPiC=s1360-w1360-h1020-rw" alt="Bebida y juegos" loading="lazy">
-          <div class="gallery__item-overlay"><span>Juegos & Tragos</span></div>
+          <div class="gallery__item-overlay"><span class="gallery__item-label">Juegos &amp; Tragos</span></div>
         </div>
         <div class="gallery__item" data-animate="fade-up" data-delay="250">
           <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmSdFUiBBO30HWJpIAG8xeQQuDEccMhPt6dsDv1YSSmS7cO1r4ChvaJE8abq6Yxl5XmI1EvSiUXvNp4wnLrjt9zbCF_-YVJsPEl_tEXXSmg0kzjwmV2ZxvkNZpluYAZKm6_f9Rv4HtRGVo=s1360-w1360-h1020-rw" alt="Milanesas" loading="lazy">
-          <div class="gallery__item-overlay"><span>Milanesas</span></div>
+          <div class="gallery__item-overlay"><span class="gallery__item-label">Milanesas</span></div>
         </div>
         <div class="gallery__item gallery__item--wide" data-animate="fade-up" data-delay="300">
           <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlZUJ1bVv6-92ln8NnJ49Z0hw9KAPQ8GYxu_IUZgXvPoEUcy6lU-eMDXO5gN2CwftErVxL0DA0fpbrxCwn6UWLHcB115vVQAJVskSSNffI1Q-VfTFyAMvCbIqTddbz6KYci9fHSys6s_TLH=s1360-w1360-h1020-rw" alt="Bartender" loading="lazy">
-          <div class="gallery__item-overlay"><span>Bartender</span></div>
+          <div class="gallery__item-overlay"><span class="gallery__item-label">Bartender</span></div>
         </div>
       </div>
     </div>
@@ -156,8 +149,10 @@
   <!-- SIGNATURE DRINKS -->
   <section class="drinks section">
     <div class="container">
-      <span class="section__label" data-animate="fade-up">Nuestras signatures</span>
-      <h2 class="section__title" data-animate="fade-up" data-delay="100">Tragos que enamoran</h2>
+      <div class="section__header">
+        <span class="section__label" data-animate="fade-up">Nuestras signatures</span>
+        <h2 class="section__title" data-animate="fade-up" data-delay="100">Tragos que enamoran</h2>
+      </div>
       <div class="drinks__grid">
         <div class="drinks__card" data-animate="fade-up" data-delay="100">
           <div class="drinks__card-img">
@@ -193,23 +188,40 @@
   <!-- MOMENTS -->
   <section class="moments section" id="momentos">
     <div class="container">
-      <span class="section__label" data-animate="fade-up">Elegí tu momento</span>
-      <h2 class="section__title" data-animate="fade-up" data-delay="100">Siempre hay un buen motivo</h2>
+      <div class="section__header">
+        <span class="section__label" data-animate="fade-up">Elegí tu momento</span>
+        <h2 class="section__title" data-animate="fade-up" data-delay="100">Siempre hay un buen motivo</h2>
+      </div>
       <div class="moments__grid">
         <div class="moments__card" data-animate="fade-up" data-delay="100">
-          <span class="moments__card-time">18:00 — 20:00</span>
-          <h3 class="moments__card-title">La previa perfecta</h3>
-          <p class="moments__card-text">Arrancá la noche con una birra tirada o un gin tonic bien frío. El preludio de lo que viene.</p>
+          <div class="moments__card-img">
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm2orklDfz_cfhl5uUVJrjPo5qCE0TovygNKllyu9A9oVf35gIS_sJfNj4KzMBynh_XtaYXqDk81k63aJ3lvDTOmDInFCSkIujlSgHDKnpua8wkPohHApr4qjQiBMk8wjn-6xSjuA=s1360-w1360-h1020-rw" alt="La previa - barra" loading="lazy">
+          </div>
+          <div class="moments__card-content">
+            <span class="moments__card-time">18:00 — 20:00</span>
+            <h3 class="moments__card-title">La previa perfecta</h3>
+            <p class="moments__card-text">Arrancá la noche con una birra tirada o un gin tonic bien frío. El preludio de lo que viene.</p>
+          </div>
         </div>
         <div class="moments__card" data-animate="fade-up" data-delay="200">
-          <span class="moments__card-time">20:00 — 00:00</span>
-          <h3 class="moments__card-title">La cena que necesitás</h3>
-          <p class="moments__card-text">Hamburguesas, milanesas, papas fritas y coctelería de autor. La mesa perfecta para compartir.</p>
+          <div class="moments__card-img">
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWldshl09yYopP7J-7nsdA18aL7f2nTBsvpcfG35Tua0qkKQKl7IjjQKRX_mGcVIpETxfFXMLOulnwLB6w3tPQTkFDz3okP1u5ruqHc2o5lR3i1Nre2OJBezluJdbYno0PzqT5g=s1360-w1360-h1020-rw" alt="La cena - hamburguesa" loading="lazy">
+          </div>
+          <div class="moments__card-content">
+            <span class="moments__card-time">20:00 — 00:00</span>
+            <h3 class="moments__card-title">La cena que necesitás</h3>
+            <p class="moments__card-text">Hamburguesas, milanesas, papas fritas y coctelería de autor. La mesa perfecta para compartir.</p>
+          </div>
         </div>
         <div class="moments__card" data-animate="fade-up" data-delay="300">
-          <span class="moments__card-time">00:00 — hasta el cierre</span>
-          <h3 class="moments__card-title">La salida que no para</h3>
-          <p class="moments__card-text">Cuando la noche se pone buena, Región brilla más fuerte. Música, tragos y la vibra que buscabas.</p>
+          <div class="moments__card-img">
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkA2c_mQ96Dj9r4yOpRj9FAsLLwn49P29Y_Qc4xemlL0_mrY5aR9xkAbZ3ttn6PI3lZFUPtNFYLRhr1sZ1nK5LCSbTRMv9xp3wPN7vM1S_KIaa6VYMf104lyaYpwPTdlRSir2e2zHtrJPiC=s1360-w1360-h1020-rw" alt="La salida - juegos y tragos" loading="lazy">
+          </div>
+          <div class="moments__card-content">
+            <span class="moments__card-time">00:00 — hasta el cierre</span>
+            <h3 class="moments__card-title">La salida que no para</h3>
+            <p class="moments__card-text">Cuando la noche se pone buena, Región brilla más fuerte. Música, tragos y la vibra que buscabas.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -217,10 +229,9 @@
 
   <!-- HERO DISH -->
   <section class="hero-dish">
-    <div class="hero-dish__bg"></div>
     <div class="container hero-dish__inner">
       <div class="hero-dish__content" data-animate="fade-up">
-        <span class="section__label">Nuestra specialidad</span>
+        <span class="section__label">Nuestra especialidad</span>
         <h2 class="hero-dish__title">La Tabla de Fritos</h2>
         <p class="hero-dish__text">Nuestra legendaria tabla: papas fritas doradas, aros de cebolla, mozzarella sticks y todo lo que necesitas para acompañar los mejores tragos de Palermo. La compartís, la disfrutás, la repetís.</p>
         <a href="https://wa.me/5491135994950" class="btn btn--primary" target="_blank" rel="noopener">Pedila ahora</a>
@@ -235,27 +246,29 @@
   <section class="history section" id="historia">
     <div class="container history__inner">
       <div class="history__content" data-animate="fade-up">
-        <span class="section__label">Nuestra historia</span>
-        <h2 class="section__title section__title--left">Desde 2021 en Soho</h2>
+        <div class="section__header">
+          <span class="section__label">Nuestra historia</span>
+          <h2 class="section__title">Desde 2021 en Soho</h2>
+        </div>
         <p class="history__text">Región nació en 2021 con una idea simple: crear el lugar donde la gente quisiera estar todas las noches. Un bar con personalidad, tragos que importan y una vibra que no copiamos de nadie.</p>
         <p class="history__text">En el corazón de Palermo Soho, entre las calles Borges y Costa Rica, armamos un espacio con paredes oscuras, luces cálidas y esa sensación de que estás en casa pero mejor. Hoy somos el punto de encuentro de noches que se cuentan.</p>
         <div class="history__stats">
-          <div class="history__stat" data-animate="fade-up" data-delay="100">
+          <div data-animate="fade-up" data-delay="100">
             <span class="history__stat-number" data-count="241">0</span>
             <span class="history__stat-label">Reseñas</span>
           </div>
-          <div class="history__stat" data-animate="fade-up" data-delay="200">
+          <div data-animate="fade-up" data-delay="200">
             <span class="history__stat-number" data-count="4.0" data-decimal="true">0</span>
             <span class="history__stat-label">Rating</span>
           </div>
-          <div class="history__stat" data-animate="fade-up" data-delay="300">
+          <div data-animate="fade-up" data-delay="300">
             <span class="history__stat-number" data-count="7">0</span>
             <span class="history__stat-label">Noches / semana</span>
           </div>
         </div>
       </div>
       <div class="history__image" data-animate="fade-up" data-delay="200">
-        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWldshl09yYopP7J-7nsdA18aL7f2nTBsvpcfG35Tua0qkKQKl7IjjQKRX_mGcVIpETxfFXMLOulnwLB6w3tPQTkFDz3okP1u5ruqHc2o5lR3i1Nre2OJBezluJdbYno0PzqT5g=s1360-w1360-h1020-rw" alt="Región Palermo interior" loading="lazy">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm2orklDfz_cfhl5uUVJrjPo5qCE0TovygNKllyu9A9oVf35gIS_sJfNj4KzMBynh_XtaYXqDk81k63aJ3lvDTOmDInFCSkIujlSgHDKnpua8wkPohHApr4qjQiBMk8wjn-6xSjuA=s1360-w1360-h1020-rw" alt="Barra de Región Palermo" loading="lazy">
       </div>
     </div>
   </section>
@@ -263,17 +276,20 @@
   <!-- TESTIMONIALS -->
   <section class="testimonials section" id="opiniones">
     <div class="container">
-      <span class="section__label" data-animate="fade-up">Lo que dicen</span>
-      <h2 class="section__title" data-animate="fade-up" data-delay="100">Opiniones reales</h2>
+      <div class="section__header">
+        <span class="section__label" data-animate="fade-up">Lo que dicen</span>
+        <h2 class="section__title" data-animate="fade-up" data-delay="100">Opiniones reales</h2>
+      </div>
       <div class="testimonials__rating" data-animate="fade-up" data-delay="150">
-        <div class="testimonials__stars">
+        <span class="testimonials__rating-number">4.0</span>
+        <div class="testimonials__rating-stars">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           <svg width="20" height="20" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           <svg width="20" height="20" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           <svg width="20" height="20" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
         </div>
-        <span class="testimonials__rating-text">4.0 — 241 reseñas en Google</span>
+        <span>241 reseñas en Google</span>
       </div>
       <div class="testimonials__grid">
         <div class="testimonials__card" data-animate="fade-up" data-delay="100">
@@ -281,14 +297,14 @@
             <div class="testimonials__card-avatar">M</div>
             <div>
               <span class="testimonials__card-name">Martín G.</span>
-              <div class="testimonials__card-stars">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              </div>
             </div>
+          </div>
+          <div class="testimonials__card-stars">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           </div>
           <p class="testimonials__card-text">"El gin tonic Moretti es de otro nivel. La vibra del lugar te hace querer quedarte toda la noche. Sin duda el mejor bar de Palermo."</p>
         </div>
@@ -297,14 +313,14 @@
             <div class="testimonials__card-avatar">L</div>
             <div>
               <span class="testimonials__card-name">Laura P.</span>
-              <div class="testimonials__card-stars">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              </div>
             </div>
+          </div>
+          <div class="testimonials__card-stars">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           </div>
           <p class="testimonials__card-text">"Las milanesas son CRACK. Pedí la napolitana con papas y no te vas a arrepentir. El lugar tiene una onda increíble."</p>
         </div>
@@ -313,14 +329,14 @@
             <div class="testimonials__card-avatar">R</div>
             <div>
               <span class="testimonials__card-name">Rodrigo F.</span>
-              <div class="testimonials__card-stars">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              </div>
             </div>
+          </div>
+          <div class="testimonials__card-stars">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           </div>
           <p class="testimonials__card-text">"Salimos los sábados y siempre terminamos acá. La previa, la cena y la salida, todo en un solo lugar. Región es mi casa nocturna."</p>
         </div>
@@ -331,23 +347,25 @@
   <!-- CONTACT -->
   <section class="contact section" id="contacto">
     <div class="container">
-      <span class="section__label" data-animate="fade-up">Reservá tu lugar</span>
-      <h2 class="section__title" data-animate="fade-up" data-delay="100">¿Venís a Región?</h2>
+      <div class="section__header">
+        <span class="section__label" data-animate="fade-up">Reservá tu lugar</span>
+        <h2 class="section__title" data-animate="fade-up" data-delay="100">¿Venís a Región?</h2>
+      </div>
       <div class="contact__inner">
-        <div class="contact__form-wrapper" data-animate="fade-up" data-delay="100">
+        <div data-animate="fade-up" data-delay="100">
           <form class="contact__form" id="reservationForm">
             <div class="contact__form-row">
-              <div class="contact__form-group">
+              <div class="form-group">
                 <label for="name">Nombre</label>
                 <input type="text" id="name" name="name" required placeholder="Tu nombre">
               </div>
-              <div class="contact__form-group">
+              <div class="form-group">
                 <label for="whatsapp">WhatsApp</label>
                 <input type="tel" id="whatsapp" name="whatsapp" required placeholder="11 3599 4950">
               </div>
             </div>
             <div class="contact__form-row">
-              <div class="contact__form-group">
+              <div class="form-group">
                 <label for="people">Personas</label>
                 <select id="people" name="people" required>
                   <option value="" disabled selected>Cantidad</option>
@@ -357,13 +375,13 @@
                   <option value="7+">7+ personas</option>
                 </select>
               </div>
-              <div class="contact__form-group">
+              <div class="form-group">
                 <label for="date">Fecha</label>
                 <input type="date" id="date" name="date" required>
               </div>
             </div>
             <div class="contact__form-row">
-              <div class="contact__form-group">
+              <div class="form-group">
                 <label for="time">Horario</label>
                 <select id="time" name="time" required>
                   <option value="" disabled selected>Elegí horario</option>
@@ -378,7 +396,7 @@
                   <option value="02:00">02:00</option>
                 </select>
               </div>
-              <div class="contact__form-group">
+              <div class="form-group">
                 <label for="message">Mensaje (opcional)</label>
                 <input type="text" id="message" name="message" placeholder="Algo que debamos saber...">
               </div>
@@ -388,37 +406,25 @@
         </div>
         <div class="contact__info" data-animate="fade-up" data-delay="200">
           <div class="contact__info-card">
-            <div class="contact__info-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            </div>
-            <div>
-              <h4 class="contact__info-label">Ubicación</h4>
-              <p class="contact__info-text">Jorge Luis Borges 1655<br>Palermo Soho, CABA</p>
-            </div>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:16px;color:var(--gold)"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <h4 class="contact__info-label">Ubicación</h4>
+            <p class="contact__info-text">Jorge Luis Borges 1655<br>Palermo Soho, CABA</p>
           </div>
           <div class="contact__info-card">
-            <div class="contact__info-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            </div>
-            <div>
-              <h4 class="contact__info-label">Horarios</h4>
-              <p class="contact__info-text">Lun-Jue: 18:00 - 03:00<br>Vie: 18:30 - 02:30<br>Sáb: 20:00 - 05:00<br>Dom: 18:00 - 03:15</p>
-            </div>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:16px;color:var(--gold)"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <h4 class="contact__info-label">Horarios</h4>
+            <p class="contact__info-text">Lun-Jue: 18:00 - 03:00<br>Vie: 18:30 - 02:30<br>Sáb: 20:00 - 05:00<br>Dom: 18:00 - 03:15</p>
           </div>
           <div class="contact__info-card">
-            <div class="contact__info-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            </div>
-            <div>
-              <h4 class="contact__info-label">Contacto</h4>
-              <p class="contact__info-text">
-                <a href="https://wa.me/5491135994950" target="_blank" rel="noopener">WhatsApp</a>
-                <span class="contact__info-divider">·</span>
-                <a href="https://www.instagram.com/region.palermo/?hl=es" target="_blank" rel="noopener">Instagram</a>
-                <span class="contact__info-divider">·</span>
-                <a href="https://www.facebook.com/p/Regi%C3%B3n-Palermo-100085668995145/" target="_blank" rel="noopener">Facebook</a>
-              </p>
-            </div>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:16px;color:var(--gold)"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <h4 class="contact__info-label">Contacto</h4>
+            <p class="contact__info-text">
+              <a href="https://wa.me/5491135994950" target="_blank" rel="noopener">WhatsApp</a>
+              <span style="margin:0 8px;color:var(--text-muted)">·</span>
+              <a href="https://www.instagram.com/region.palermo/?hl=es" target="_blank" rel="noopener">Instagram</a>
+              <span style="margin:0 8px;color:var(--text-muted)">·</span>
+              <a href="https://www.facebook.com/p/Regi%C3%B3n-Palermo-100085668995145/" target="_blank" rel="noopener">Facebook</a>
+            </p>
           </div>
         </div>
       </div>
@@ -429,8 +435,10 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__top">
-        <div class="footer__brand">
-          <img src="https://unicorn-images.b-cdn.net/a182ef3f-2ca0-4775-bb1e-5daaedbf2d5a?optimizer=gif" alt="Región Logo" class="footer__logo">
+        <div>
+          <div class="footer__logo">
+            <img src="https://unicorn-images.b-cdn.net/a182ef3f-2ca0-4775-bb1e-5daaedbf2d5a?optimizer=gif" alt="Región Logo">
+          </div>
           <p class="footer__tagline">La noche se enciende en Región</p>
         </div>
         <div class="footer__map">

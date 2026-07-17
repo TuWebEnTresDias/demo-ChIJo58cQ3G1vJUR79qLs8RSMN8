@@ -24,13 +24,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // ─── 0. Console Welcome ──────────────────────────────────────────
   console.log('🔥 Región Palermo — Landing Page cargada');
 
-  // ─── 9. Performance — Reduced Motion ─────────────────────────────
+  // ─── 1. Reduced Motion ───────────────────────────────────────────
   if (prefersReducedMotion) {
     document.documentElement.style.setProperty('--transition-speed', '0.01s');
     document.documentElement.style.setProperty('--animation-duration', '0.01s');
   }
 
-  // ─── 1. Header Scroll Effect ─────────────────────────────────────
+  // ─── 2. Header Scroll Effect ─────────────────────────────────────
   const handleHeaderScroll = () => {
     if (window.scrollY > 50) {
       header.classList.add('header--scrolled');
@@ -40,12 +40,11 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   window.addEventListener('scroll', handleHeaderScroll, { passive: true });
-  handleHeaderScroll(); // run on load
+  handleHeaderScroll();
 
-  // ─── 2. Mobile Menu Toggle ───────────────────────────────────────
+  // ─── 3. Mobile Menu Toggle ───────────────────────────────────────
   const toggleMobileMenu = () => {
     const isActive = mobileMenu.classList.contains('active');
-
     burgerBtn.classList.toggle('active');
     mobileMenu.classList.toggle('active');
     document.body.style.overflow = isActive ? '' : 'hidden';
@@ -71,11 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // ─── 3. Smooth Scroll ────────────────────────────────────────────
-  const getHeaderHeight = () => {
-    return header ? header.offsetHeight : 0;
-  };
-
+  // ─── 4. Smooth Scroll ────────────────────────────────────────────
   anchorLinks.forEach(link => {
     link.addEventListener('click', (e) => {
       const href = link.getAttribute('href');
@@ -85,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!target) return;
 
       e.preventDefault();
-      const headerHeight = getHeaderHeight();
+      const headerHeight = header ? header.offsetHeight : 0;
       const targetPosition = target.getBoundingClientRect().top + window.scrollY - headerHeight;
 
       window.scrollTo({
@@ -95,17 +90,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ─── 4. Scroll Reveal Animations ─────────────────────────────────
+  // ─── 5. Scroll Reveal Animations ─────────────────────────────────
   if (animatedElements.length > 0 && !prefersReducedMotion) {
     const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           const delay = parseInt(entry.target.getAttribute('data-delay'), 10) || 0;
-
           setTimeout(() => {
             entry.target.classList.add('animated');
           }, delay);
-
           revealObserver.unobserve(entry.target);
         }
       });
@@ -116,11 +109,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     animatedElements.forEach(el => revealObserver.observe(el));
   } else if (prefersReducedMotion) {
-    // If reduced motion preferred, show all elements immediately
     animatedElements.forEach(el => el.classList.add('animated'));
   }
 
-  // ─── 5. Reservation Form → WhatsApp ──────────────────────────────
+  // ─── 6. Reservation Form → WhatsApp ──────────────────────────────
   const MONTHS_ES = [
     'enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
     'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'
@@ -163,14 +155,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const formData = new FormData(reservationForm);
       const data = {
         name: formData.get('name') || '',
-        phone: formData.get('phone') || '',
+        phone: formData.get('whatsapp') || '',
         people: formData.get('people') || '',
         date: formData.get('date') || '',
         time: formData.get('time') || '',
         message: formData.get('message') || ''
       };
 
-      // Basic validation
       if (!data.name.trim() || !data.phone.trim()) {
         alert('Por favor completá tu nombre y número de WhatsApp.');
         return;
@@ -184,14 +175,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ─── 6. Hero Parallax ────────────────────────────────────────────
+  // ─── 7. Hero Parallax ────────────────────────────────────────────
   if (heroBgImg && heroSection && !prefersReducedMotion) {
     const handleParallax = () => {
       const heroRect = heroSection.getBoundingClientRect();
-      const heroBottom = heroRect.bottom;
-
-      // Only apply parallax while hero is in view
-      if (heroBottom > 0) {
+      if (heroRect.bottom > 0) {
         const scrolled = window.scrollY;
         const translateY = scrolled * 0.3;
         heroBgImg.style.transform = `translateY(${translateY}px)`;
@@ -201,16 +189,14 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', handleParallax, { passive: true });
   }
 
-  // ─── 7. Active Nav Highlighting ──────────────────────────────────
+  // ─── 8. Active Nav Highlighting ──────────────────────────────────
   const handleActiveNav = () => {
     const scrollPos = window.scrollY + 200;
-
     let currentSection = '';
 
     sections.forEach(section => {
       const sectionTop = section.offsetTop;
       const sectionHeight = section.offsetHeight;
-
       if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
         currentSection = section.getAttribute('id');
       }
@@ -226,9 +212,9 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   window.addEventListener('scroll', handleActiveNav, { passive: true });
-  handleActiveNav(); // run on load
+  handleActiveNav();
 
-  // ─── 8. Stats Counter Animation ──────────────────────────────────
+  // ─── 9. Stats Counter Animation ──────────────────────────────────
   if (statNumbers.length > 0 && !prefersReducedMotion) {
     const parseStatTarget = (text) => {
       const clean = text.trim();
@@ -236,7 +222,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const number = parseFloat(clean);
       const hasDecimal = clean.includes('.');
       const decimalPlaces = hasDecimal ? (clean.split('.')[1] || '').length : 0;
-
       return { number: isNaN(number) ? 0 : number, suffix, decimalPlaces };
     };
 
@@ -246,10 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const step = (currentTime) => {
         const elapsed = currentTime - startTime;
         const progress = Math.min(elapsed / duration, 1);
-
-        // Ease-out cubic
         const easedProgress = 1 - Math.pow(1 - progress, 3);
-
         const currentValue = easedProgress * target;
 
         if (decimalPlaces > 0) {
@@ -273,9 +255,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
           statElements.forEach(el => {
             const targetValue = el.getAttribute('data-count') || el.textContent;
-            const hasDecimal = el.hasAttribute('data-decimal');
             const { number, suffix, decimalPlaces } = parseStatTarget(targetValue);
-
             animateCounter(el, number, suffix, decimalPlaces, 1500);
           });
 
@@ -286,13 +266,10 @@ document.addEventListener('DOMContentLoaded', () => {
       threshold: 0.3
     });
 
-    // Find the parent container that holds all stat numbers
     const statsSection = statNumbers[0]?.closest('section') || statNumbers[0]?.parentElement;
     if (statsSection) {
       counterObserver.observe(statsSection);
     }
-  } else if (prefersReducedMotion) {
-    // If reduced motion, leave stat numbers as they are (no animation)
   }
 
 });
